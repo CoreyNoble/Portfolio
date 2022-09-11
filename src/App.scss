@@ -1,2 +1,5 @@
+@import "src/utils/design-tokens/spacing";
+
 .App {
+  margin: $space-l;
 }

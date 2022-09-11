@@ -1,0 +1,64 @@
+@import "src/utils/design-tokens/theme/light";
+@import "src/utils/design-tokens/spacing";
+@import "src/utils/design-tokens/transitions";
+
+button {
+  background-color: $background-accent;
+  border: 2px solid $border-accent;
+  border-radius: $space-l;
+  cursor: pointer;
+  color: $text-inverse;
+  padding: $space-s $space-xxl;
+  transition: all $speed-m $ease-in-out-circ;
+
+  &:focus-visible {
+    outline: unset;
+  }
+
+  &:hover {
+    background-color: darken($background-accent, $percent-m);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  &:focus {
+    border-color: $border-primary;
+  }
+
+  &:active {
+    background-color: $background-accent;
+    box-shadow: unset;
+  }
+
+  &.secondary {
+    background-color: $background-inverse;
+    border-color: $border-primary;
+
+    &:hover {
+      background-color: lighten($background-inverse, $percent-m);
+    }
+
+    &:focus {
+      border-color: $border-accent;
+    }
+
+    &:active {
+      background-color: $background-inverse;
+    }
+  }
+
+  &:disabled {
+    background-color: $background-disabled;
+    border-color: $border-disabled;
+    color: $text-primary;
+    cursor: not-allowed;
+
+    &:hover, &:active, &:focus, &:visited {
+      background-color: $background-disabled;
+      box-shadow: unset;
+    }
+
+    &:active {
+      background-color: $background-disabled;
+    }
+  }
+}
