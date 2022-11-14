@@ -1,0 +1,37 @@
+@use "src/utils/design-tokens/theme/light" as color;
+@use "src/utils/design-tokens/spacing" as space;
+@use "src/utils/design-tokens/transitions" as transition;
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__animation {
+
+    &-profile {
+      .orbital {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background: color.$background-accent;
+
+        img {
+          width: 3.75rem;
+          max-height: 3.75rem;
+        }
+      }
+    }
+  }
+
+  &__details {
+
+    &-title {}
+
+    &-ctas {}
+
+    &-badge {}
+  }
+}
