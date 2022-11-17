@@ -18,11 +18,11 @@ import {
 export const Hero: React.FC = () => {
   const [playingAnimation, setPlayingAnimation] = useState(true);
 
-  const pauseOrbit = (e: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
+  const pauseOrbit = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     setPlayingAnimation(false);
   };
 
-  const playOrbit = (e: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
+  const playOrbit = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     setPlayingAnimation(true);
   };
 
@@ -35,92 +35,92 @@ export const Hero: React.FC = () => {
           <img src={profile} alt="" />
         </div>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={TYPESCRIPT} alt="TypeScript" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={SYNTATCICALLY_AWESOME_STYLE_SHEETS} alt="Syntactically Awesome Style Sheets" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img className="pt-xs" src={HYPER_TEXT_MARKUP_LANGUAGE} alt="HyperText Markup Language" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={GIT} alt="Git" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={TESTING_LIBRARY} alt="Testing Library" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={CYPRESS} alt="Cypress" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={GOOGLE_LIGHTHOUSE} alt="Google Lighthouse" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={DOCKER} alt="Docker" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img src={NODE} alt="Node" />
           </li>
         </ul>
 
-        <ul
-          onMouseEnter={pauseOrbit}
-          onMouseLeave={playOrbit}
-        >
-          <li>
+        <ul>
+          <li
+            onMouseEnter={pauseOrbit}
+            onMouseLeave={playOrbit}
+          >
             <img className="spin" src={REACT} alt="React" />
           </li>
         </ul>
