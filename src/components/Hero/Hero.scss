@@ -1,0 +1,38 @@
+@use "src/utils/design-tokens/spacing" as space;
+
+.hero {
+    display: grid;
+    margin-top: space.$xxxl;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: space.$l;
+    background-color: green;
+
+    &__animation {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    &__introduction {
+        
+    }
+
+    &__badge {
+        display: grid;
+        grid-gap: space.$l;
+        grid-template-areas:
+            "icon title title"
+            "description description description";
+        
+            &-icon {
+                grid-area: icon;
+            }
+
+            &-title {
+                grid-area: title;
+            }
+
+            &-description {
+                grid-area: description;
+            }
+    }
+}

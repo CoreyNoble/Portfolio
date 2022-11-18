@@ -1,0 +1,22 @@
+@use "src/utils/design-tokens/spacing" as space;
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: space.$l;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+
+    &__logo {
+        background-color: black;
+    }
+
+    &__ctas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: space.$l;
+        justify-self: end;
+        background-color: black;
+    }
+}

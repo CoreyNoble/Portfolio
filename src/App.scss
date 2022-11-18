@@ -2,4 +2,17 @@
 
 .App {
   margin: space.$l;
+  max-width: 1280px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: space.$l;
+
+  &__item {
+    padding: space.$s;
+    background-color: black;
+    color: white;
+  }
 }
