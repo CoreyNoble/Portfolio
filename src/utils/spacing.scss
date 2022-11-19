@@ -1,0 +1,131 @@
+@use "src/utils/design-tokens/sizing" as size;
+
+// Margin //
+
+// Auto
+.m-lr-auto { margin-left: auto; margin-right: auto; }
+.m-l-auto  { margin-left: auto;  }
+.m-r-auto  { margin-right: auto; }
+
+// All Sides
+.m-xxxl    { margin: size.$xxxl; }
+.m-xxl     { margin: size.$xxl;  }
+.m-xl      { margin: size.$xl;   }
+.m-l       { margin: size.$l;    }
+.m-m       { margin: size.$m;    }
+.m-s       { margin: size.$s;    }
+.m-xs      { margin: size.$xs;   }
+.m-xxs     { margin: size.$xxs;  }
+.m-xxxs    { margin: size.$xxxs; }
+.m-n       { margin: size.$n;    }
+
+// Top
+.m-t-xxxl  { margin-top: size.$xxxl; }
+.m-t-xxl   { margin-top: size.$xxl;  }
+.m-t-xl    { margin-top: size.$xl;   }
+.m-t-l     { margin-top: size.$l;    }
+.m-t-m     { margin-top: size.$m;    }
+.m-t-s     { margin-top: size.$s;    }
+.m-t-xs    { margin-top: size.$xs;   }
+.m-t-xxs   { margin-top: size.$xxs;  }
+.m-t-xxxs  { margin-top: size.$xxxs; }
+.m-t-n     { margin-top: size.$n;    }
+
+// Right
+.m-r-xxxl  { margin-right: size.$xxxl; }
+.m-r-xxl   { margin-right: size.$xxl;  }
+.m-r-xl    { margin-right: size.$xl;   }
+.m-r-l     { margin-right: size.$l;    }
+.m-r-m     { margin-right: size.$m;    }
+.m-r-s     { margin-right: size.$s;    }
+.m-r-xs    { margin-right: size.$xs;   }
+.m-r-xxs   { margin-right: size.$xxs;  }
+.m-r-xxxs  { margin-right: size.$xxxs; }
+.m-r-n     { margin-right: size.$n;    }
+
+// Bottom
+.m-b-xxxl  { margin-bottom: size.$xxxl; }
+.m-b-xxl   { margin-bottom: size.$xxl;  }
+.m-b-xl    { margin-bottom: size.$xl;   }
+.m-b-l     { margin-bottom: size.$l;    }
+.m-b-m     { margin-bottom: size.$m;    }
+.m-b-s     { margin-bottom: size.$s;    }
+.m-b-xs    { margin-bottom: size.$xs;   }
+.m-b-xxs   { margin-bottom: size.$xxs;  }
+.m-b-xxxs  { margin-bottom: size.$xxxs; }
+.m-b-n     { margin-bottom: size.$n;    }
+
+// Left
+.m-l-xxxl  { margin-left: size.$xxxl; }
+.m-l-xxl   { margin-left: size.$xxl;  }
+.m-l-xl    { margin-left: size.$xl;   }
+.m-l-l     { margin-left: size.$l;    }
+.m-l-m     { margin-left: size.$m;    }
+.m-l-s     { margin-left: size.$s;    }
+.m-l-xs    { margin-left: size.$xs;   }
+.m-l-xxs   { margin-left: size.$xxs;  }
+.m-l-xxxs  { margin-left: size.$xxxs; }
+.m-l-n     { margin-left: size.$n;    }
+
+
+// Padding //
+
+// All Sides
+.p-xxxl    { padding: size.$xxxl; }
+.p-xxl     { padding: size.$xxl;  }
+.p-xl      { padding: size.$xl;   }
+.p-l       { padding: size.$l;    }
+.p-m       { padding: size.$m;    }
+.p-s       { padding: size.$s;    }
+.p-xs      { padding: size.$xs;   }
+.p-xxs     { padding: size.$xxs;  }
+.p-xxxs    { padding: size.$xxxs; }
+.p-n       { padding: size.$n;    }
+
+// Top
+.p-t-xxxl  { padding-top: size.$xxxl; }
+.p-t-xxl   { padding-top: size.$xxl;  }
+.p-t-xl    { padding-top: size.$xl;   }
+.p-t-l     { padding-top: size.$l;    }
+.p-t-m     { padding-top: size.$m;    }
+.p-t-s     { padding-top: size.$s;    }
+.p-t-xs    { padding-top: size.$xs;   }
+.p-t-xxs   { padding-top: size.$xxs;  }
+.p-t-xxxs  { padding-top: size.$xxxs; }
+.p-t-n     { padding-top: size.$n;    }
+
+// Right
+.p-r-xxxl  { padding-right: size.$xxxl; }
+.p-r-xxl   { padding-right: size.$xxl;  }
+.p-r-xl    { padding-right: size.$xl;   }
+.p-r-l     { padding-right: size.$l;    }
+.p-r-m     { padding-right: size.$m;    }
+.p-r-s     { padding-right: size.$s;    }
+.p-r-xs    { padding-right: size.$xs;   }
+.p-r-xxs   { padding-right: size.$xxs;  }
+.p-r-xxxs  { padding-right: size.$xxxs; }
+.p-r-n     { padding-right: size.$n;    }
+
+// Bottom
+.p-b-xxxl  { padding-bottom: size.$xxxl; }
+.p-b-xxl   { padding-bottom: size.$xxl;  }
+.p-b-xl    { padding-bottom: size.$xl;   }
+.p-b-l     { padding-bottom: size.$l;    }
+.p-b-m     { padding-bottom: size.$m;    }
+.p-b-s     { padding-bottom: size.$s;    }
+.p-b-xs    { padding-bottom: size.$xs;   }
+.p-b-xxs   { padding-bottom: size.$xxs;  }
+.p-b-xxxs  { padding-bottom: size.$xxxs; }
+.p-b-n     { padding-bottom: size.$n;    }
+
+// Left
+.p-l-xxxl  { padding-left: size.$xxxl; }
+.p-l-xxl   { padding-left: size.$xxl;  }
+.p-l-xl    { padding-left: size.$xl;   }
+.p-l-l     { padding-left: size.$l;    }
+.p-l-m     { padding-left: size.$m;    }
+.p-l-s     { padding-left: size.$s;    }
+.p-l-xs    { padding-left: size.$xs;   }
+.p-l-xxs   { padding-left: size.$xxs;  }
+.p-l-xxxs  { padding-left: size.$xxxs; }
+.p-l-n     { padding-left: size.$n;    }

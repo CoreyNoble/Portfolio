@@ -1,17 +1,17 @@
-@use "src/utils/design-tokens/spacing" as space;
+@use "src/utils/design-tokens/sizing" as size;
 
 .App {
-  margin: space.$l auto;
+  margin: size.$l auto;
   max-width: 80rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: space.$l;
+  grid-gap: size.$l;
 
   &__item {
-    padding: space.$s;
+    padding: size.$s;
     background-color: black;
     color: white;
   }

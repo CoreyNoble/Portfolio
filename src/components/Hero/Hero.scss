@@ -1,11 +1,11 @@
-@use "src/utils/design-tokens/spacing" as space;
+@use "src/utils/design-tokens/sizing" as size;
 @use "src/utils/breakpoints" as breakpoint;
 
 .hero {
     display: grid;
-    margin-top: space.$xxxl;
+    margin-top: size.$xxxl;
     grid-template-columns: 1fr 1fr;
-    grid-gap: space.$l;
+    grid-gap: size.$l;
     background-color: green;
 
     @include breakpoint.tablet {
@@ -27,7 +27,7 @@
 
     &__badge {
         display: grid;
-        grid-gap: space.$l;
+        grid-gap: size.$l;
         grid-template-areas:
             "icon title title"
             "description description description";

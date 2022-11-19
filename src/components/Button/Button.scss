@@ -1,14 +1,14 @@
 @use "src/utils/design-tokens/theme/light" as color;
-@use "src/utils/design-tokens/spacing" as space;
+@use "src/utils/design-tokens/sizing" as size;
 @use "src/utils/design-tokens/transitions" as transition;
 
 button {
   background-color: color.$background-accent;
-  border: space.$xxxl solid color.$border-accent;
-  border-radius: space.$l;
+  border: size.$xxxl solid color.$border-accent;
+  border-radius: size.$l;
   cursor: pointer;
   color: color.$text-inverse;
-  padding: space.$s space.$xxl;
+  padding: size.$s size.$xxl;
   transition: all transition.$speed-m transition.$ease-in-out-circ;
 
   &:focus-visible {
