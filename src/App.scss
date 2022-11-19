@@ -1,8 +1,8 @@
 @use "src/utils/design-tokens/spacing" as space;
 
 .App {
-  margin: space.$l;
-  max-width: 1280px;
+  margin: space.$l auto;
+  max-width: 80rem;
 }
 
 .grid {
