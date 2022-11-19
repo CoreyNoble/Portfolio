@@ -1,0 +1,35 @@
+@use "src/utils/transitions" as transition;
+
+:root {
+  --background-primary: #F6F8FA;
+  --background-secondary : #FFFFFF;
+  --background-accent : #66958A;
+  --background-inverse : #202124;
+  --background-disabled : #CCCCCC;
+  --border-primary : #202124;
+  --border-accent : #66958A;
+  --border-inverse : #FFFFFF;
+  --border-disabled : #CCCCCC;
+  --text-primary : #413F66;
+  --text-inverse : #FFFFFF;
+  --text-accent : #66958A;
+
+  --base-lightness: 50%;
+  --background-accent-darken: hsl(var(--background-accent),calc(var(--base-lightness) - transition.$percent-m));
+  --background-accent-lighten: hsl(var(--background-accent),calc(var(--base-lightness) + transition.$percent-m));
+}
+
+[data-theme="dark"] {
+  --background-primary: #413F66;
+  --background-secondary : #202124;
+  --background-accent : #66958A;
+  --background-inverse : #FFFFFF;
+  --background-disabled : #CCCCCC;
+  --border-primary : #FFFFFF;
+  --border-accent : #66958A;
+  --border-inverse : #202124;
+  --border-disabled : #CCCCCC;
+  --text-primary : #F6F8FA;
+  --text-inverse : #202124;
+  --text-accent : #66958A;
+}

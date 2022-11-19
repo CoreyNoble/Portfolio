@@ -9,23 +9,25 @@ import Contact from "./components/Contact/Contact";
 import { Button } from "./components/Button/Button";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [theme, setTheme] = useState("light");
 
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevDarkMode) => !prevDarkMode);
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
 
   return (
-    <div className="App">
-      <Button className="m-b-l" onClick={toggleDarkMode}>
-        Toggle Theme ({isDarkMode ? "Light Mode" : "Dark Mode"})
-      </Button>
+    <div className="App" data-theme={theme}>
+      <div className="App__container">
+        <Button className="m-b-l" onClick={toggleTheme}>
+          Toggle Theme ({theme ? "Light Mode" : "Dark Mode"})
+        </Button>
 
-      <Navigation />
-      <Hero />
-      <Portfolio />
-      <About />
-      <Contact />
+        <Navigation />
+        <Hero />
+        <Portfolio />
+        <About />
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -1,8 +1,14 @@
-@use "src/utils/design-tokens/sizing" as size;
+@use "src/utils/sizing" as size;
 
 .App {
-  margin: size.$l auto;
-  max-width: 80rem;
+  background-color: var(--background-primary);
+  height: 100vh;
+
+  &__container {
+    margin: size.$n auto;
+    padding: size.$l size.$n;
+    max-width: 80rem;
+  }
 }
 
 .grid {

@@ -1,13 +1,12 @@
-@use "src/utils/design-tokens/theme/light" as color;
-@use "src/utils/design-tokens/sizing" as size;
-@use "src/utils/design-tokens/transitions" as transition;
+@use "src/utils/sizing" as size;
+@use "src/utils/transitions" as transition;
 
 button {
-  background-color: color.$background-accent;
-  border: size.$xxxl solid color.$border-accent;
+  background-color: var(--background-accent);
+  border: size.$xxxs solid var(--border-accent);
   border-radius: size.$l;
   cursor: pointer;
-  color: color.$text-inverse;
+  color: var(--text-inverse);
   padding: size.$s size.$xxl;
   transition: all transition.$speed-m transition.$ease-in-out-circ;
 
@@ -16,49 +15,50 @@ button {
   }
 
   &:hover {
-    background-color: darken(color.$background-accent, transition.$percent-m);
+    background-color: var(--background-accent-darken);
+    color: var(--text-primary);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
   &:focus {
-    border-color: color.$border-primary;
+    border-color: var(--border-primary);
   }
 
   &:active {
-    background-color: color.$background-accent;
+    background-color: var(--background-accent);
     box-shadow: unset;
   }
 
   &.secondary {
-    background-color: color.$background-inverse;
-    border-color: color.$border-primary;
+    background-color: var(--background-inverse);
+    border-color: var(--border-primary);
 
     &:hover {
-      background-color: lighten(color.$background-inverse, transition.$percent-m);
+      background-color: var(--background-accent-lighten);
     }
 
     &:focus {
-      border-color: color.$border-accent;
+      border-color: var(--border-accent);
     }
 
     &:active {
-      background-color: color.$background-inverse;
+      background-color: var(--background-inverse);
     }
   }
 
   &:disabled {
-    background-color: color.$background-disabled;
-    border-color: color.$border-disabled;
-    color: color.$text-primary;
+    background-color: var(--background-disabled);
+    border-color: var(--border-disabled);
+    color: var(--text-primary);
     cursor: not-allowed;
 
     &:hover, &:active, &:focus, &:visited {
-      background-color: color.$background-disabled;
+      background-color: var(--background-disabled);
       box-shadow: unset;
     }
 
     &:active {
-      background-color: color.$background-disabled;
+      background-color: var(--background-disabled);
     }
   }
 }
