@@ -13,6 +13,7 @@
   --text-primary : #413F66;
   --text-inverse : #FFFFFF;
   --text-accent : #66958A;
+  --text-button : #202124;
 
   --base-lightness: 50%;
   --background-accent-darken: hsl(var(--background-accent),calc(var(--base-lightness) - transition.$percent-m));
@@ -32,4 +33,5 @@
   --text-primary : #F6F8FA;
   --text-inverse : #202124;
   --text-accent : #66958A;
+  --text-button : #202124;
 }

@@ -3,10 +3,11 @@
 
 button {
   background-color: var(--background-accent);
+  font-weight: bold;
   border: size.$xxxs solid var(--border-accent);
   border-radius: size.$l;
   cursor: pointer;
-  color: var(--text-inverse);
+  color: var(--text-button);
   padding: size.$s size.$xxl;
   transition: all transition.$speed-m transition.$ease-in-out-circ;
 
@@ -60,5 +61,10 @@ button {
     &:active {
       background-color: var(--background-disabled);
     }
+  }
+
+  &.icon {
+    padding: size.$xs size.$s;
+    min-width: 3rem;
   }
 }

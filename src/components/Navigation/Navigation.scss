@@ -6,17 +6,11 @@
     grid-column-gap: size.$l;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-
-    &__logo {
-        background-color: black;
-    }
 
     &__ctas {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: size.$l;
         justify-self: end;
-        background-color: black;
     }
 }
