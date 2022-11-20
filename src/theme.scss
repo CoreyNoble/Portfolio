@@ -1,39 +1,51 @@
+@use "src/utils/sizing" as size;
 @use "src/utils/timing" as timing;
 @use "src/utils/variance" as variance;
 
 :root {
-  --background-primary: #F6F8FA;
-  --background-secondary : #FFFFFF;
-  --background-accent : #66958A;
-  --background-inverse : #202124;
-  --background-disabled : #CCCCCC;
-  --border-primary : #202124;
-  --border-accent : #66958A;
-  --border-inverse : #FFFFFF;
-  --icon-primary : #413F66;
-  --text-primary : #413F66;
-  --text-inverse : #FFFFFF;
-  --text-accent : #66958A;
-  --text-button : #202124;
+  --background-primary: #f6f8fa;
+  --background-secondary: #ffffff;
+  --background-accent: #66958a;
+  --background-inverse: #202124;
+  --background-disabled: #cccccc;
+  --border-primary: #202124;
+  --border-accent: #66958a;
+  --border-inverse: #ffffff;
+  --icon-primary: #413f66;
+  --text-primary: #413f66;
+  --text-inverse: #ffffff;
+  --text-accent: #66958a;
+  --text-button: #202124;
 
   --base-lightness: 50%;
-  --background-accent-darken: hsl(var(--background-accent),calc(var(--base-lightness) - variance.$m));
-  --background-accent-lighten: hsl(var(--background-accent),calc(var(--base-lightness) + variance.$m));
+  --background-accent-darken: hsl(
+    var(--background-accent),
+    calc(var(--base-lightness) - variance.$m)
+  );
+  --background-accent-lighten: hsl(
+    var(--background-accent),
+    calc(var(--base-lightness) + variance.$m)
+  );
+
+  --shadow: rgba(20, 21, 24, 0.25) 0px 2px 5px -1px,
+    rgba(20, 21, 24, 0.3) 0px 1px 3px -1px;
 }
 
 [data-theme="dark"] {
-  --background-primary: #413F66;
-  --background-secondary : #202124;
-  --background-accent : #66958A;
-  --background-inverse : #FFFFFF;
-  --background-disabled : #CCCCCC;
-  --border-primary : #FFFFFF;
-  --border-accent : #66958A;
-  --border-inverse : #202124;
-  --border-disabled : #CCCCCC;
-  --icon-primary : #F6F8FA;
-  --text-primary : #F6F8FA;
-  --text-inverse : #202124;
-  --text-accent : #66958A;
-  --text-button : #202124;
+  --background-primary: #413f66;
+  --background-secondary: #202124;
+  --background-accent: #66958a;
+  --background-inverse: #ffffff;
+  --background-disabled: #cccccc;
+  --border-primary: #ffffff;
+  --border-accent: #66958a;
+  --border-inverse: #202124;
+  --border-disabled: #cccccc;
+  --icon-primary: #f6f8fa;
+  --text-primary: #f6f8fa;
+  --text-inverse: #202124;
+  --text-accent: #66958a;
+  --text-button: #202124;
+  --shadow: rgba(246, 248, 250, 0.25) 0px 2px 5px -1px,
+    rgba(246, 248, 250, 0.3) 0px 1px 3px -1px;
 }

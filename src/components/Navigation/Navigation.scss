@@ -15,10 +15,10 @@
     &__theme {
         align-items: center;
         margin-top: 0rem;
-        transition: margin-top timing.$speed-xxxl linear;
+        transition: margin-top timing.$speed-m linear;
 
         &.toggling-theme {
-            margin-top: -11rem;
+            margin-top: -10rem;
         }
 
         button {
