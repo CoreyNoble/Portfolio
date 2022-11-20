@@ -2,7 +2,8 @@ import { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../App";
 import { Button } from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-regular-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Navigation.scss";
 
@@ -31,8 +32,8 @@ function Navigation() {
       <div className={`navigation__theme ${togglingTheme ? 'toggling-theme' : ''}`}>
         <Button className="icon" onClick={toggleTheme}>
           {togglingTheme && theme === "light" && <FontAwesomeIcon icon={faMoon} title="toggle light mode" />}
-          {!togglingTheme && theme === "light" && <FontAwesomeIcon icon={faSun} title="toggle dark mode" />}
-          {togglingTheme && theme === "dark" && <FontAwesomeIcon icon={faSun} title="toggle dark mode" />}
+          {!togglingTheme && theme === "light" && <FontAwesomeIcon className="sun" icon={faSun} title="toggle dark mode" />}
+          {togglingTheme && theme === "dark" && <FontAwesomeIcon className="sun" icon={faSun} title="toggle dark mode" />}
           {!togglingTheme && theme === "dark" && <FontAwesomeIcon icon={faMoon} title="toggle light mode" />}
         </Button>
       </div>

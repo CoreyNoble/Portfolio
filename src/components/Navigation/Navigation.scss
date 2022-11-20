@@ -21,8 +21,12 @@
             margin-top: -10rem;
         }
 
-        button {
+        .icon {
             margin: 0 auto;
+
+            .sun {
+                transform: rotate(20deg);
+            }
         }
     }
 
