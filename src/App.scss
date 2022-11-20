@@ -2,13 +2,7 @@
 
 .App {
   background-color: var(--background-primary);
-  height: 100vh;
-
-  &__container {
-    margin: size.$n auto;
-    padding: size.$l size.$n;
-    max-width: 80rem;
-  }
+  min-height: 100vh;
 }
 
 .grid {

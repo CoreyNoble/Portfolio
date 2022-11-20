@@ -1,4 +1,5 @@
 @use "src/utils/sizing" as size;
+@use "src/utils/fontSize" as fontSize;
 @use "src/utils/timing" as timing;
 @use "src/utils/easing" as easing;
 @import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic");
@@ -41,6 +42,22 @@ h6,
   word-break: break-word;
   color: var(--text-primary);
   transition: color timing.$speed-xxxl easing.$ease-in-out-circ;
+}
+
+h1, .h1 {
+  font-weight: bold;
+  font-size: fontSize.$xxxl;
+  line-height: 1.4;
+  margin-top: size.$m;
+  margin-bottom: size.$m;
+}
+
+h2, .h2 {
+  font-weight: bold;
+  font-size: fontSize.$xxl;
+  line-height: 1.4;
+  margin-top: size.$s;
+  margin-bottom: size.$s;
 }
 
 p,

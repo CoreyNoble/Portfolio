@@ -1,0 +1,47 @@
+@use "src/utils/sizing" as size;
+
+.section {
+    background-color: var(--background-primary);
+
+    &.spacing {
+        margin-top: -10rem;
+        margin-bottom: 10rem;
+        padding-top: size.$xxxl;
+        padding-bottom: 10rem;
+
+        &.hero-spacing {
+            margin-top: unset;
+        }
+    }
+
+    &__container {
+        margin: size.$n auto;
+        padding: size.$l size.$n;
+        max-width: 80rem;
+
+        &-header {
+            color: var(--text-background);
+            position: absolute;
+            width: 100%;
+            max-width: 80rem;
+            font-size: 5rem;
+            margin-top: -8.6rem;
+            text-transform: uppercase;
+            letter-spacing: size.$xxs;
+            text-align: right;
+            margin-left: size.$xs;
+        }
+    }
+
+    &.inverse {
+        background-color: var(--background-accent);
+
+        .section__container {    
+            &-header {
+                color: var(--text-accent);
+                text-align: left;
+                margin-left: calc(size.$xxs * -1);
+            }
+        }
+    }
+}

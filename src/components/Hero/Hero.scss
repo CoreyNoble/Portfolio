@@ -3,36 +3,11 @@
 
 .hero {
     display: grid;
-    margin-top: size.$xxxl;
     grid-template-columns: 1fr 1fr;
     grid-gap: size.$l;
 
-    &__animation {
-        grid-column: 1 / 2;
-        grid-row: 1 / 4;
-    }
-
     &__introduction {
-        
-    }
-
-    &__badge {
-        display: grid;
-        grid-gap: size.$l;
-        grid-template-areas:
-            "icon title title"
-            "description description description";
-        
-            &-icon {
-                grid-area: icon;
-            }
-
-            &-title {
-                grid-area: title;
-            }
-
-            &-description {
-                grid-area: description;
-            }
+        margin-top: size.$xxxl;
+        padding-top: size.$xxxl;
     }
 }
