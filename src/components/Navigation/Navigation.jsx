@@ -12,16 +12,18 @@ function Navigation() {
   const [ togglingTheme, setTogglingTheme ] = useState(false);
 
   useEffect(() => {
-    if (setTogglingTheme) {
+    if (togglingTheme) {
       setTimeout(() => {
         setTogglingTheme(false);
       }, 800);
     }
   }, [togglingTheme])
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-    setTogglingTheme(true);
+  const toggleTheme = (shouldToggle) => {
+    if (shouldToggle) {
+      setTheme(theme === "light" ? "dark" : "light");
+      setTogglingTheme(true);
+    }
   };
 
   return (
@@ -30,7 +32,7 @@ function Navigation() {
         <span><strong>Corey Noble</strong></span>
       </div>
       <div className={`navigation__theme ${togglingTheme ? 'toggling-theme' : ''}`}>
-        <Button className="icon" onClick={toggleTheme}>
+        <Button className="icon" onClick={() => { toggleTheme(!togglingTheme) }}>
           {togglingTheme && theme === "light" && <FontAwesomeIcon icon={faMoon} title="toggle light mode" />}
           {!togglingTheme && theme === "light" && <FontAwesomeIcon className="sun" icon={faSun} title="toggle dark mode" />}
           {togglingTheme && theme === "dark" && <FontAwesomeIcon className="sun" icon={faSun} title="toggle dark mode" />}
