@@ -1,5 +1,6 @@
 @use "src/utils/sizing" as size;
-@use "src/utils/transitions" as transition;
+@use "src/utils/timing" as timing;
+@use "src/utils/easing" as easing;
 @import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 
@@ -34,6 +35,7 @@ h6,
     sans-serif;
   font-weight: normal;
   word-break: break-word;
+  color: var(--text-primary);
 }
 
 p,
@@ -46,6 +48,7 @@ li {
     "Helvetica Neue", sans-serif;
   font-weight: lighter;
   word-break: break-word;
+  color: var(--text-primary);
 }
 
 ul {
@@ -70,7 +73,7 @@ button,
   cursor: pointer;
   color: var(--text-button);
   padding: size.$s size.$xxl;
-  transition: all transition.$speed-m transition.$ease-in-out-circ;
+  transition: all timing.$speed-m easing.$ease-in-out-circ;
 
   &:focus-visible {
     outline: unset;
@@ -129,18 +132,28 @@ button,
   }
 
   &.icon {
+    background: unset;
+    border: unset;
+    color: var(--icon-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: size.$xxs size.$xs;
-    min-width: size.$l;
 
     svg {
-      height: size.$l;
+      height: size.$xxxl;
     }
   }
 }
 
 img {
   display: block;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }

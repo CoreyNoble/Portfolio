@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../App";
 import { Button } from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,24 +8,35 @@ import "./Navigation.scss";
 
 function Navigation() {
   const { theme, setTheme } = useContext(ThemeContext);
+  const [ togglingTheme, setTogglingTheme ] = useState(false);
+
+  useEffect(() => {
+    if (setTogglingTheme) {
+      setTimeout(() => {
+        setTogglingTheme(false);
+      }, 800);
+    }
+  }, [togglingTheme])
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+    setTogglingTheme(true);
   };
 
   return (
     <div className="navigation">
       <div className="navigation__logo">
-        <img src="https://via.placeholder.com/200x50.png" />
+        <span><strong>Corey Noble</strong></span>
+      </div>
+      <div className={`navigation__theme ${togglingTheme ? 'toggling-theme' : ''}`}>
+        <Button className="icon" onClick={toggleTheme}>
+          {togglingTheme && theme === "light" && <FontAwesomeIcon icon={faMoon} title="toggle light mode" />}
+          {!togglingTheme && theme === "light" && <FontAwesomeIcon icon={faSun} title="toggle dark mode" />}
+          {togglingTheme && theme === "dark" && <FontAwesomeIcon icon={faSun} title="toggle dark mode" />}
+          {!togglingTheme && theme === "dark" && <FontAwesomeIcon icon={faMoon} title="toggle light mode" />}
+        </Button>
       </div>
       <div className="navigation__ctas">
-        <Button className="icon" onClick={toggleTheme}>
-          {theme === "light" ? (
-            <FontAwesomeIcon icon={faMoon} title="toggle dark mode" />
-          ) : (
-            <FontAwesomeIcon icon={faSun} title="toggle light mode" />
-          )}
-        </Button>
         <a
           href="https://github.com/CoreyNoble"
           target="_blank"

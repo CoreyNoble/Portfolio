@@ -1,16 +1,34 @@
+@use "src/utils/timing" as timing;
 @use "src/utils/sizing" as size;
 
 .navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: size.$l;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+
+    &__logo {
+
+    }
+
+    &__theme {
+        align-items: center;
+        margin-top: 0rem;
+        transition: margin-top timing.$speed-xxxl linear;
+
+        &.toggling-theme {
+            margin-top: -11rem;
+        }
+
+        button {
+            margin: 0 auto;
+        }
+    }
 
     &__ctas {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: size.$l;
+        grid-template-columns: 1fr 1fr;
         justify-self: end;
     }
 }

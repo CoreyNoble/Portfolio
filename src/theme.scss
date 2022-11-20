@@ -1,4 +1,5 @@
-@use "src/utils/transitions" as transition;
+@use "src/utils/timing" as timing;
+@use "src/utils/variance" as variance;
 
 :root {
   --background-primary: #F6F8FA;
@@ -9,15 +10,15 @@
   --border-primary : #202124;
   --border-accent : #66958A;
   --border-inverse : #FFFFFF;
-  --border-disabled : #CCCCCC;
+  --icon-primary : #413F66;
   --text-primary : #413F66;
   --text-inverse : #FFFFFF;
   --text-accent : #66958A;
   --text-button : #202124;
 
   --base-lightness: 50%;
-  --background-accent-darken: hsl(var(--background-accent),calc(var(--base-lightness) - transition.$percent-m));
-  --background-accent-lighten: hsl(var(--background-accent),calc(var(--base-lightness) + transition.$percent-m));
+  --background-accent-darken: hsl(var(--background-accent),calc(var(--base-lightness) - variance.$m));
+  --background-accent-lighten: hsl(var(--background-accent),calc(var(--base-lightness) + variance.$m));
 }
 
 [data-theme="dark"] {
@@ -30,6 +31,7 @@
   --border-accent : #66958A;
   --border-inverse : #202124;
   --border-disabled : #CCCCCC;
+  --icon-primary : #F6F8FA;
   --text-primary : #F6F8FA;
   --text-inverse : #202124;
   --text-accent : #66958A;

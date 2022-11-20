@@ -6,15 +6,6 @@
     margin-top: size.$xxxl;
     grid-template-columns: 1fr 1fr;
     grid-gap: size.$l;
-    background-color: green;
-
-    @include breakpoint.tablet {
-        background-color: blue;
-    }
-
-    @include breakpoint.desktop {
-        background-color: red;
-    }
 
     &__animation {
         grid-column: 1 / 2;
