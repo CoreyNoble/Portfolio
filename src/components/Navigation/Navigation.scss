@@ -5,11 +5,11 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: size.$l;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 
     &__ctas {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: size.$l;
         justify-self: end;
     }
