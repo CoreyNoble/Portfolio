@@ -1,4 +1,94 @@
 @use "src/utils/sizing" as size;
+@use "src/utils/fontSize" as fontSize;
 
-.portfolio {
+.portfolio__item {
+    margin-bottom: 7rem;
+    padding-bottom: size.$xl;
+
+    &:last-child {
+        margin-bottom: unset;
+    }
+
+    &-title {
+      font-size: fontSize.$xxxl;
+      margin-bottom: size.$xs;
+    }
+
+    &-content {
+        border: size.$xxs solid var(--border-inverse);
+        position: relative;
+        box-shadow: var(--shadow);
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        &-external-link {
+            position: absolute;
+            top: calc(size.$xxxl * -1);
+            right: size.$m;
+            background-color: var(--background-primary);
+            padding: size.$xxs;
+            box-shadow: var(--shadow);
+        }
+
+        &-info {
+            background-color: var(--background-primary);
+            padding: size.$xxs;
+            position: absolute;
+            bottom: calc(size.$xxxl * -1);
+            left: size.$m;
+            box-shadow: var(--shadow);
+
+            ul {
+                margin: unset;
+                padding: unset;
+                line-height: 0;
+
+                li {
+                    margin: 0;
+                    margin-left: size.$xxs;
+                    display: inline-block;
+
+                    &:first-child {
+                        margin-left: unset;
+                    }
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-skills {
+            background-color: var(--background-primary);
+            padding: size.$xxs;
+            position: absolute;
+            bottom: calc(size.$xxxl * -1);
+            right: size.$m;
+            box-shadow: var(--shadow);
+
+            ul {
+                margin: unset;
+                padding: unset;
+                line-height: size.$n;
+
+                li {
+                    margin: size.$n;
+                    margin-left: size.$xxs;
+                    display: inline-block;
+
+                    &:first-child {
+                        margin-left: unset;
+                    }
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
