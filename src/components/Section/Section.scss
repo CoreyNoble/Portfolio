@@ -9,6 +9,11 @@
         padding-top: size.$xxxl;
         padding-bottom: 10rem;
 
+        &:last-child {
+            margin-bottom: unset;
+            padding-bottom: unset;
+        }
+
         &.hero-spacing {
             margin-top: unset;
         }

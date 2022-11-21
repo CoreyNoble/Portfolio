@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
-import { ThemeContext } from "../../App";
-import { Button } from "../Button/Button";
+import { ThemeContext } from "../../context/ThemeContext";
+import { Button } from "../../components/Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Section from "../Section/Section";
+import Section from "../../components/Section/Section";
 import "./Navigation.scss";
 
 function Navigation() {

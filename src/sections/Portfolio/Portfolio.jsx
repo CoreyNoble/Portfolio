@@ -1,4 +1,4 @@
-import Section from "../Section/Section";
+import Section from "../../components/Section/Section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
