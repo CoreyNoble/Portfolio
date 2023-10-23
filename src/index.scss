@@ -1,6 +1,7 @@
-@import 'src/utils/design-tokens/theme/light';
+@use "src/utils/design-tokens/spacing" as space;
 @import url('https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic');
+@import 'src/utils/design-tokens/theme/light';
 
 body {
   background-color: $background-primary;
@@ -36,8 +37,31 @@ h6,
   word-break: break-word;
 }
 
+h1, .h1 {
+  font-size: 5.5rem;
+}
+
+h2, .h2 {
+  font-size: 5rem;
+}
+
+h3, .h3 {
+  font-size: space.$xxxl;
+}
+
+h4, .h4 {
+  font-size: space.$xxl;
+}
+
+h5, .h5 {
+  font-size: space.$xl;
+}
+
+h6, .h6 {
+  font-size: space.$l;
+}
+
 p,
-span,
 ul,
 ol,
 li {
@@ -46,6 +70,7 @@ li {
     'Helvetica Neue', sans-serif;
   font-weight: lighter;
   word-break: break-word;
+  font-size: space.$l;
 }
 
 ul {
@@ -59,4 +84,8 @@ a {
   &:focus {
     text-decoration: none;
   }
+}
+
+section {
+  margin: space.$l;
 }
