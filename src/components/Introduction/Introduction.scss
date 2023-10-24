@@ -1,0 +1,20 @@
+@use "src/utils/design-tokens/spacing" as space;
+@use "src/utils/breakpoints" as *;
+@import "src/utils/design-tokens/theme/light";
+
+.introduction {
+  position: relative;
+  margin-top: -6rem;
+  z-index: 2;
+
+  &-primary {
+
+  }
+
+  &-secondary {
+    width: 35rem;
+    height: 35rem;
+    background-color: red;
+    border-radius: 50%;
+  }
+}

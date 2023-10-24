@@ -1,5 +1,6 @@
 import "./App.scss";
 import { Hero } from "./components/Hero/Hero";
+import { Introduction } from "./components/Introduction/Introduction";
 import { Button } from "./components/Button/Button";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Hero />
+      <Introduction />
       <section>
         <h1>
           H1 Test Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
