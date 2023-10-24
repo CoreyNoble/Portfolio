@@ -41,10 +41,6 @@ function App() {
           p Test Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef ghijkl
           mnopqr stuvwx yz
         </p>
-        <span>
-          span Test Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-          ghijkl mnopqr stuvwx yz
-        </span>
         <ul>
           <li>
             UL Test Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
@@ -65,10 +61,21 @@ function App() {
             ghijkl mnopqr stuvwx yz
           </li>
         </ol>
-        <a href="/">
-          a Test Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef ghijkl
-          mnopqr stuvwx yz
-        </a>
+        <p>
+          with pre text <a href="https://google.ca" target="_blank">Visit Google</a> Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+            ghijkl mnopqr stuvwx yz
+        </p>
+
+        <p>
+          <a href="/">Test link</a>
+        </p>
+
         <br />
         <br />
         <Button onClick={fireClick}>Primary Button</Button>

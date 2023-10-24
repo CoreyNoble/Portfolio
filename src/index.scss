@@ -1,4 +1,5 @@
 @use "src/utils/design-tokens/spacing" as space;
+@use "src/utils/design-tokens/transitions" as transition;
 @import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 @import "src/utils/design-tokens/theme/light";
@@ -103,6 +104,7 @@ li {
   font-weight: lighter;
   font-size: space.$l;
   margin-bottom: space.$s;
+  line-height: 1.4;
 
   &:last-child {
     margin-bottom: unset;
@@ -114,11 +116,39 @@ ul {
 }
 
 a {
-  text-decoration: underline;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  color: $text-primary;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $border-primary;
+    transform-origin: bottom right;
+    transition: transform transition.$speed-m ease-out;
+  }
 
   &:hover,
   &:focus {
-    text-decoration: none;
+    &::after {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+  }
+
+  &:visited {
+    color: $text-accent;
+
+    &::after {
+      background-color: $border-accent;
+    }
   }
 }
 
