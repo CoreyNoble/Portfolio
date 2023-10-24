@@ -10,6 +10,11 @@ button {
   color: color.$text-inverse;
   padding: space.$s space.$xxl;
   transition: all transition.$speed-m transition.$ease-in-out-circ;
+  margin-right: space.$s;
+
+  &:last-child {
+    margin-right: unset;
+  }
 
   &:focus-visible {
     outline: unset;

@@ -1,3 +1,4 @@
+@use "src/utils/breakpoints" as *;
 @use "src/utils/design-tokens/spacing" as space;
 @use "src/utils/design-tokens/transitions" as transition;
 @import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic");
@@ -56,42 +57,67 @@ h6,
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-weight: normal;
+  margin-bottom: space.$s;
+
+  @include isDesktop {
+    margin-bottom: space.$m;
+  }
 }
 
 h1,
 .h1 {
-  font-size: 5.5rem;
-  margin-bottom: space.$xxxl;
+  font-size: 3rem;
+  margin-bottom: space.$xxl;
+
+  @include isDesktop {
+    font-size: 3.5rem;
+    margin-bottom: space.$xxxl;
+  }
 }
 
 h2,
 .h2 {
-  font-size: 5rem;
-  margin-bottom: space.$xxl;
+  font-size: 2.5rem;
+
+  @include isDesktop {
+    font-size: 3rem;
+  }
 }
 
 h3,
 .h3 {
-  font-size: space.$xxxl;
-  margin-bottom: space.$xl;
+  font-size: space.$xxl;
+
+  @include isDesktop {
+    font-size: space.$xxxl;
+  }
 }
 
 h4,
 .h4 {
-  font-size: space.$xxl;
-  margin-bottom: space.$l;
+  font-size: space.$xl;
+
+  @include isDesktop {
+    font-size: space.$xxl;
+  }
 }
 
 h5,
 .h5 {
-  font-size: space.$xl;
-  margin-bottom: space.$m;
+  font-size: space.$l;
+
+  @include isDesktop {
+    font-size: space.$xl;
+  }
 }
 
 h6,
 .h6 {
-  font-size: space.$l;
-  margin-bottom: space.$s;
+  font-size: space.$m;
+
+  @include isDesktop {
+    font-size: space.$l;
+  }
 }
 
 p,
@@ -102,9 +128,10 @@ li {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   font-weight: lighter;
-  font-size: space.$l;
-  margin-bottom: space.$s;
   line-height: 1.4;
+
+  font-size: space.$m;
+  margin-bottom: space.$xs;
 
   &:last-child {
     margin-bottom: unset;
