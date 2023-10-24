@@ -1,0 +1,351 @@
+@use "src/utils/design-tokens/spacing" as space;
+
+// Margin
+.m-xxxl {
+    margin: space.$xxxl;
+}
+.m-xxl {
+    margin: space.$xxl;
+}
+.m-xl {
+    margin: space.$xl;
+}
+.m-l {
+    margin: space.$l;
+}
+.m-m {
+    margin: space.$m;
+}
+.m-s {
+    margin: space.$s;
+}
+.m-xs {
+    margin: space.$xs;
+}
+.m-xxs {
+    margin: space.$xxs;
+}
+.m-xxxs {
+    margin: space.$xxxs;
+}
+.m-n {
+    margin: unset;
+}
+
+// Margin Top
+.m-t-xxxl {
+    margin-top: space.$xxxl;
+}
+.m-t-xxl {
+    margin-top: space.$xxl;
+}
+.m-t-xl {
+    margin-top: space.$xl;
+}
+.m-t-l {
+    margin-top: space.$l;
+}
+.m-t-m {
+    margin-top: space.$m;
+}
+.m-t-s {
+    margin-top: space.$s;
+}
+.m-t-xs {
+    margin-top: space.$xs;
+}
+.m-t-xxs {
+    margin-top: space.$xxs;
+}
+.m-t-xxxs {
+    margin-top: space.$xxxs;
+}
+.m-t-n {
+    margin-top: unset;
+}
+
+// Margin Right
+.m-r-xxxl {
+    margin-right: space.$xxxl;
+}
+.m-r-xxl {
+    margin-right: space.$xxl;
+}
+.m-r-xl {
+    margin-right: space.$xl;
+}
+.m-r-l {
+    margin-right: space.$l;
+}
+.m-r-m {
+    margin-right: space.$m;
+}
+.m-r-s {
+    margin-right: space.$s;
+}
+.m-r-xs {
+    margin-right: space.$xs;
+}
+.m-r-xxs {
+    margin-right: space.$xxs;
+}
+.m-r-xxxs {
+    margin-right: space.$xxxs;
+}
+.m-r-n {
+    margin-right: unset;
+}
+
+// Margin Bottom
+.m-b-xxxl {
+    margin-bottom: space.$xxxl;
+}
+.m-b-xxl {
+    margin-bottom: space.$xxl;
+}
+.m-b-xl {
+    margin-bottom: space.$xl;
+}
+.m-b-l {
+    margin-bottom: space.$l;
+}
+.m-b-m {
+    margin-bottom: space.$m;
+}
+.m-b-s {
+    margin-bottom: space.$s;
+}
+.m-b-xs {
+    margin-bottom: space.$xs;
+}
+.m-b-xxs {
+    margin-bottom: space.$xxs;
+}
+.m-b-xxxs {
+    margin-bottom: space.$xxxs;
+}
+.m-b-n {
+    margin-bottom: unset;
+}
+
+// Margin Left
+.m-l-xxxl {
+    margin-left: space.$xxxl;
+}
+.m-l-xxl {
+    margin-left: space.$xxl;
+}
+.m-l-xl {
+    margin-left: space.$xl;
+}
+.m-l-l {
+    margin-left: space.$l;
+}
+.m-l-m {
+    margin-left: space.$m;
+}
+.m-l-s {
+    margin-left: space.$s;
+}
+.m-l-xs {
+    margin-left: space.$xs;
+}
+.m-l-xxs {
+    margin-left: space.$xxs;
+}
+.m-l-xxxs {
+    margin-left: space.$xxxs;
+}
+.m-l-n {
+    margin-left: unset;
+}
+
+// Padding
+.p-xxxl {
+    padding: space.$xxxl;
+}
+.p-xxl {
+    padding: space.$xxl;
+}
+.p-xl {
+    padding: space.$xl;
+}
+.p-l {
+    padding: space.$l;
+}
+.p-m {
+    padding: space.$m;
+}
+.p-s {
+    padding: space.$s;
+}
+.p-xs {
+    padding: space.$xs;
+}
+.p-xxs {
+    padding: space.$xxs;
+}
+.p-xxxs {
+    padding: space.$xxxs;
+}
+.p-n {
+    padding: unset;
+}
+
+// Padding Top
+.p-t-xxxl {
+    padding-top: space.$xxxl;
+}
+.p-t-xxl {
+    padding-top: space.$xxl;
+}
+.p-t-xl {
+    padding-top: space.$xl;
+}
+.p-t-l {
+    padding-top: space.$l;
+}
+.p-t-m {
+    padding-top: space.$m;
+}
+.p-t-s {
+    padding-top: space.$s;
+}
+.p-t-xs {
+    padding-top: space.$xs;
+}
+.p-t-xxs {
+    padding-top: space.$xxs;
+}
+.p-t-xxxs {
+    padding-top: space.$xxxs;
+}
+.p-t-n {
+    padding-top: unset;
+}
+
+// Padding Right
+.p-r-xxxl {
+    padding-right: space.$xxxl;
+}
+.p-r-xxl {
+    padding-right: space.$xxl;
+}
+.p-r-xl {
+    padding-right: space.$xl;
+}
+.p-r-l {
+    padding-right: space.$l;
+}
+.p-r-m {
+    padding-right: space.$m;
+}
+.p-r-s {
+    padding-right: space.$s;
+}
+.p-r-xs {
+    padding-right: space.$xs;
+}
+.p-r-xxs {
+    padding-right: space.$xxs;
+}
+.p-r-xxxs {
+    padding-right: space.$xxxs;
+}
+.p-r-n {
+    padding-right: unset;
+}
+
+// Padding Bottom
+.p-b-xxxl {
+    padding-bottom: space.$xxxl;
+}
+.p-b-xxl {
+    padding-bottom: space.$xxl;
+}
+.p-b-xl {
+    padding-bottom: space.$xl;
+}
+.p-b-l {
+    padding-bottom: space.$l;
+}
+.p-b-m {
+    padding-bottom: space.$m;
+}
+.p-b-s {
+    padding-bottom: space.$s;
+}
+.p-b-xs {
+    padding-bottom: space.$xs;
+}
+.p-b-xxs {
+    padding-bottom: space.$xxs;
+}
+.p-b-xxxs {
+    padding-bottom: space.$xxxs;
+}
+.p-b-n {
+    padding-bottom: unset;
+}
+
+// Padding Left
+.p-l-xxxl {
+    padding-left: space.$xxxl;
+}
+.p-l-xxl {
+    padding-left: space.$xxl;
+}
+.p-l-xl {
+    padding-left: space.$xl;
+}
+.p-l-l {
+    padding-left: space.$l;
+}
+.p-l-m {
+    padding-left: space.$m;
+}
+.p-l-s {
+    padding-left: space.$s;
+}
+.p-l-xs {
+    padding-left: space.$xs;
+}
+.p-l-xxs {
+    padding-left: space.$xxs;
+}
+.p-l-xxxs {
+    padding-left: space.$xxxs;
+}
+.p-l-n {
+    padding-left: unset;
+}
+
+// Alignment
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}

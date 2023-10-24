@@ -8,7 +8,7 @@ export const Hero = () => {
         <br />
         I'm Corey Noble
       </h1>
-      <p>A Front-End Software Engineer</p>
+      <p className="h4 m-b-n">Front-End Software Engineer</p>
       <svg
         className="hero-separator"
         xmlns="http://www.w3.org/2000/svg"

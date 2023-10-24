@@ -1,19 +1,19 @@
 @use "src/utils/design-tokens/spacing" as space;
-@import url('https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic');
-@import 'src/utils/design-tokens/theme/light';
+@import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+@import "src/utils/design-tokens/theme/light";
 
 body {
   background-color: $background-primary;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -29,48 +29,84 @@ h4,
 h5,
 .h5,
 h6,
+.h6,
+p,
+ul,
+ol,
+li {
+  word-break: break-word;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
 .h6 {
-  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-weight: normal;
-  word-break: break-word;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 5.5rem;
+  margin-bottom: space.$xxxl;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 5rem;
+  margin-bottom: space.$xxl;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: space.$xxxl;
+  margin-bottom: space.$xl;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: space.$xxl;
+  margin-bottom: space.$l;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: space.$xl;
+  margin-bottom: space.$m;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: space.$l;
+  margin-bottom: space.$s;
 }
 
 p,
 ul,
 ol,
 li {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   font-weight: lighter;
-  word-break: break-word;
   font-size: space.$l;
+  margin-bottom: space.$s;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
 }
 
 ul {
