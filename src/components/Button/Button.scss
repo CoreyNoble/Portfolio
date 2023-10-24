@@ -3,14 +3,14 @@
 @use "src/utils/design-tokens/transitions" as transition;
 
 button {
-  background-color: color.$background-accent;
-  border: 2px solid color.$border-accent;
-  border-radius: space.$l;
+  background-color: transparent;
+  border: 1px solid color.$border-primary;
+  border-radius: space.$xxs;
   cursor: pointer;
-  color: color.$text-inverse;
   padding: space.$s space.$xxl;
-  transition: all transition.$speed-m transition.$ease-in-out-circ;
+  transition: all transition.$speed-m ease;
   margin-right: space.$s;
+  font-weight: bold;
 
   &:last-child {
     margin-right: unset;
@@ -20,34 +20,44 @@ button {
     outline: unset;
   }
 
-  &:hover {
-    background-color: darken(color.$background-accent, transition.$percent-m);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
-
+  &:hover,
   &:focus {
-    border-color: color.$border-primary;
-  }
-
-  &:active {
-    background-color: color.$background-accent;
-    box-shadow: unset;
+    color: color.$text-inverse;
+    background-color: color.$background-inverse;
   }
 
   &.secondary {
-    background-color: color.$background-inverse;
-    border-color: color.$border-primary;
+    color: color.$text-primary;
+    border-color: color.$border-accent;
+    background-color: color.$background-accent;
 
-    &:hover {
-      background-color: lighten(color.$background-inverse, transition.$percent-m);
-    }
-
+    &:hover,
     &:focus {
-      border-color: color.$border-accent;
-    }
-
-    &:active {
+      color: color.$text-inverse;
       background-color: color.$background-inverse;
+    }
+  }
+
+  &.inverse {
+    color: color.$text-inverse;
+    border-color: color.$border-inverse;
+
+    &:hover,
+    &:focus {
+      color: color.$text-primary;
+      background-color: color.$background-primary;
+    }
+  }
+
+  &.secondary.inverse {
+    color: color.$text-primary;
+    border-color: color.$border-accent;
+    background-color: color.$background-accent;
+
+    &:hover,
+    &:focus {
+      color: color.$text-primary;
+      background-color: color.$background-primary;
     }
   }
 
@@ -57,7 +67,10 @@ button {
     color: color.$text-primary;
     cursor: not-allowed;
 
-    &:hover, &:active, &:focus, &:visited {
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
       background-color: color.$background-disabled;
       box-shadow: unset;
     }

@@ -8,8 +8,8 @@ export const Introduction = () => {
     <section className="introduction constrained flex align-end justify-space-around">
       <div className="introduction-primary m-b-xxxl">
         <Section
-          firstTitle="What I bring to the table"
-          secondTitle="Over a decade of tinkering"
+          firstTitle="What I bring to the&nbsp;table"
+          secondTitle="Over a decade of&nbsp;tinkering"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

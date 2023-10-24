@@ -1,7 +1,6 @@
 import "./App.scss";
 import { Hero } from "./components/Hero/Hero";
 import { Introduction } from "./components/Introduction/Introduction";
-import { Section } from "./components/Section/Section";
 import { Button } from "./components/Button/Button";
 
 function App() {
@@ -88,10 +87,16 @@ function App() {
         <Button className="secondary" onClick={fireClick}>
           Secondary Button
         </Button>
+        <Button className="inverse" onClick={fireClick}>
+          Inverse Button
+        </Button>
+        <Button className="secondary inverse" onClick={fireClick}>
+          Inverse Secondary Button
+        </Button>
         <Button onClick={fireClick} disabled>
           ABCDE
         </Button>
-        <Button className="secondary" onClick={fireClick} disabled>
+        <Button className="inverse" onClick={fireClick} disabled>
           FGHIJ
         </Button>
       </section>
