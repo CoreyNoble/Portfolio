@@ -6,7 +6,7 @@ export const Hero = () => {
       <h1>
         Hello there! <span className="wave">👋🏻</span>
         <br />
-        I'm Corey Noble
+        I'm Corey&nbsp;Noble
       </h1>
       <p className="h4 m-b-n">Front-End Software Engineer</p>
       <svg

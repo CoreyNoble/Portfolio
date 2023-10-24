@@ -1,5 +1,12 @@
 @use "src/utils/design-tokens/spacing" as space;
 
+.constrained {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 84.125rem;
+    padding: 0 space.$m;
+}
+
 // Margin
 .m-xxxl {
     margin: space.$xxxl;
@@ -342,8 +349,16 @@
     justify-content: space-around;
 }
 
+.align-start {
+    align-items: start;
+}
+
 .align-center {
     align-items: center;
+}
+
+.align-end {
+    align-items: end;
 }
 
 .flex-direction-column {

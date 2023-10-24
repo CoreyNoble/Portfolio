@@ -1,6 +1,7 @@
 import "./App.scss";
 import { Hero } from "./components/Hero/Hero";
 import { Introduction } from "./components/Introduction/Introduction";
+import { Section } from "./components/Section/Section";
 import { Button } from "./components/Button/Button";
 
 function App() {
@@ -62,14 +63,19 @@ function App() {
           </li>
         </ol>
         <p>
-          with pre text <a href="https://google.ca" target="_blank">Visit Google</a> Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
-            ghijkl mnopqr stuvwx yz
+          with pre text{" "}
+          <a href="https://google.ca" target="_blank">
+            Visit Google
+          </a>{" "}
+          Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef ghijkl mnopqr
+          stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef
+          ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ? || & % 1234
+          56789 abcdef ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit amet. ! ?
+          || & % 1234 56789 abcdef ghijkl mnopqr stuvwx yz Lorem ipsum dolor sit
+          amet. ! ? || & % 1234 56789 abcdef ghijkl mnopqr stuvwx yz Lorem ipsum
+          dolor sit amet. ! ? || & % 1234 56789 abcdef ghijkl mnopqr stuvwx yz
+          Lorem ipsum dolor sit amet. ! ? || & % 1234 56789 abcdef ghijkl mnopqr
+          stuvwx yz
         </p>
 
         <p>

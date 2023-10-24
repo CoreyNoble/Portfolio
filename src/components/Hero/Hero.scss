@@ -7,6 +7,7 @@
   color: $text-inverse;
   margin: unset;
   padding: 4rem space.$l 10rem space.$l;
+  text-align: center;
 
   .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */

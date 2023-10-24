@@ -1,5 +1,5 @@
+@use "src/utils/breakpoints" as *;
 @use "src/utils/design-tokens/spacing" as space;
-@import "src/utils/design-tokens/theme/light";
 
 .introduction {
   position: relative;
@@ -7,13 +7,23 @@
   z-index: 2;
 
   &-primary {
-
+    flex: 2;
+    padding-right: space.$m;
   }
 
   &-secondary {
-    width: 35rem;
-    height: 35rem;
-    background-color: $background-accent;
-    border-radius: 50%;
+    flex: 1;
+    padding-left: space.$m;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 20rem;
+      margin: 0 auto;
+
+      @include isDesktop {
+        max-width: 30rem;
+      }
+    }
   }
 }

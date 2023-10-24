@@ -77,15 +77,23 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2.5rem;
-
-  @include isDesktop {
-    font-size: 3rem;
-  }
+  text-transform: uppercase;
+  font-size: space.$m;
 }
 
 h3,
 .h3 {
+  font-size: 2.5rem;
+  margin-bottom: space.$l;
+
+  @include isDesktop {
+    font-size: 3rem;
+    margin-bottom: space.$xl;
+  }
+}
+
+h4,
+.h4 {
   font-size: space.$xxl;
 
   @include isDesktop {
@@ -93,8 +101,8 @@ h3,
   }
 }
 
-h4,
-.h4 {
+h5,
+.h5 {
   font-size: space.$xl;
 
   @include isDesktop {
@@ -102,21 +110,12 @@ h4,
   }
 }
 
-h5,
-.h5 {
+h6,
+.h6 {
   font-size: space.$l;
 
   @include isDesktop {
     font-size: space.$xl;
-  }
-}
-
-h6,
-.h6 {
-  font-size: space.$m;
-
-  @include isDesktop {
-    font-size: space.$l;
   }
 }
 

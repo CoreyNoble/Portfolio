@@ -1,0 +1,9 @@
+@use "src/utils/design-tokens/theme/light" as color;
+@use "src/utils/design-tokens/spacing" as space;
+
+.divider {
+    width: 100%;
+    max-width: 4rem;
+    border-bottom: 2px solid color.$border-primary;
+    margin-bottom: space.$xxxl;
+}
