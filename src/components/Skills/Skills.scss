@@ -1,0 +1,56 @@
+@use "src/utils/breakpoints" as *;
+@use "src/utils/design-tokens/spacing" as space;
+
+.skills {
+  position: relative;
+  z-index: 2;
+
+  &-primary {
+    flex: 1;
+    padding-right: space.$m;
+  }
+
+  &-secondary {
+    flex: 1;
+    padding-left: space.$m;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      width: 100%;
+      max-width: 3rem;
+      max-height: 3rem;
+      margin-right: space.$l;
+      margin-bottom: space.$l;
+
+      &.rotate-clockwise {
+        animation: rotate-clockwise-animation 6s linear infinite;
+
+        @keyframes rotate-clockwise-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+      &.rotate-counter-clockwise {
+        animation: rotate-counter-clockwise-animation 6s linear infinite;
+
+        @keyframes rotate-counter-clockwise-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(-360deg);
+          }
+        }
+      }
+    }
+  }
+}

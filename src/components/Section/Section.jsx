@@ -4,10 +4,14 @@ import "./Section.scss";
 export const Section = ({ firstTitle, secondTitle, description }) => {
   return (
     <div className="section">
-      <h2>{firstTitle}</h2>
-      <Divider />
-      <h3>{secondTitle}</h3>
-      <p>{description}</p>
+      {firstTitle && (
+        <>
+          <h2>{firstTitle}</h2>
+          <Divider />
+        </>
+      )}
+      {secondTitle && <h3>{secondTitle}</h3>}
+      {description && <p>{description}</p>}
     </div>
   );
-}
+};

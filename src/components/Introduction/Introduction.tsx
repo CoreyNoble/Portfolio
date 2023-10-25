@@ -5,7 +5,7 @@ import "./Introduction.scss";
 
 export const Introduction = () => {
   return (
-    <section className="introduction constrained flex align-end justify-space-around">
+    <section className="introduction constrained flex align-end justify-space-around m-b-xxxl">
       <div className="introduction-primary m-b-xxxl">
         <Section
           firstTitle="What I bring to the&nbsp;table"
