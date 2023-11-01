@@ -5,8 +5,8 @@ import "./Introduction.scss";
 
 export const Introduction = () => {
   return (
-    <section className="introduction constrained flex align-end justify-space-around m-b-xxxl">
-      <div className="introduction-primary m-b-xxxl">
+    <section className="introduction constrained row m-b-xxxl">
+      <div className="introduction-primary m-b-xxxl col-sm-12 col-lg-6">
         <Section
           firstTitle="What I bring to the&nbsp;table"
           secondTitle="Over a decade of&nbsp;tinkering"
@@ -20,7 +20,7 @@ export const Introduction = () => {
         />
       </div>
 
-      <div className="introduction-secondary">
+      <div className="introduction-secondary col-sm-12 col-lg-6">
         <img src={avatar} alt="" />
       </div>
     </section>
