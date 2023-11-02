@@ -23,35 +23,37 @@ import "./Skills.scss";
 
 export const Skills = () => {
   return (
-    <section className="skills constrained flex justify-space-around">
-      <div className="skills-primary">
-        <Section firstTitle="Primary Technologies" />
-        <div className="skills-list">
-          <img src={iconReact} className="rotate-clockwise" alt="" />
-          <img src={iconTypeScript} alt="" />
-          <img src={iconSASS} alt="" />
-          <img src={iconHTML} alt="" />
-          <img src={iconGit} alt="" />
-          <img src={iconJest} alt="" />
-          <img src={iconRTL} alt="" />
-          <img src={iconCypress} alt="" />
-          <img src={iconStorybook} alt="" />
+    <section className="skills container">
+      <div className="row">
+        <div className="skills-primary col-sm-12 col-lg-6 m-b-xxxl">
+          <Section firstTitle="Primary Technologies" />
+          <div className="skills-list">
+            <img src={iconReact} className="rotate-clockwise" alt="" />
+            <img src={iconTypeScript} alt="" />
+            <img src={iconSASS} alt="" />
+            <img src={iconHTML} alt="" />
+            <img src={iconGit} alt="" />
+            <img src={iconJest} alt="" />
+            <img src={iconRTL} alt="" />
+            <img src={iconCypress} alt="" />
+            <img src={iconStorybook} alt="" />
+          </div>
         </div>
-      </div>
 
-      <div className="skills-secondary">
-        <Section firstTitle="Secondary Technologies" />
-        <div className="skills-list">
-          <img src={iconDocker} alt="" />
-          <img src={iconNode} alt="" />
-          <img src={iconLighthouse} alt="" />
-          <img src={iconFigma} alt="" />
-          <img src={iconPhotoshop} alt="" />
-          <img src={iconVSCode} alt="" />
-          <img src={iconChrome} className="rotate-counter-clockwise" alt="" />
-          <img src={iconFirefox} alt="" />
-          <img src={iconSafari} alt="" />
-          <img src={iconEdge} alt="" />
+        <div className="skills-secondary col-sm-12 col-lg-6 m-b-xxxl">
+          <Section firstTitle="Secondary Technologies" />
+          <div className="skills-list">
+            <img src={iconDocker} alt="" />
+            <img src={iconNode} alt="" />
+            <img src={iconLighthouse} alt="" />
+            <img src={iconFigma} alt="" />
+            <img src={iconPhotoshop} alt="" />
+            <img src={iconVSCode} alt="" />
+            <img src={iconChrome} className="rotate-counter-clockwise" alt="" />
+            <img src={iconFirefox} alt="" />
+            <img src={iconSafari} alt="" />
+            <img src={iconEdge} alt="" />
+          </div>
         </div>
       </div>
     </section>

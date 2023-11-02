@@ -1,3 +1,30 @@
+@use "src/utils/breakpoints" as *;
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@include isTablet {
+  .container {
+    width: 750px;
+  }
+}
+@include isDesktop {
+  .container {
+    width: 970px;
+  }
+}
+@include isLargeDesktop {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
 .row {
   width: 100%;
 }
@@ -219,7 +246,7 @@
 .col-xs-offset-0 {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@include isTablet {
   .col-sm-1,
   .col-sm-10,
   .col-sm-11,
@@ -388,7 +415,7 @@
     margin-left: 0;
   }
 }
-@media (min-width: 992px) {
+@include isDesktop {
   .col-md-1,
   .col-md-10,
   .col-md-11,
@@ -557,7 +584,7 @@
     margin-left: 0;
   }
 }
-@media (min-width: 1200px) {
+@include isLargeDesktop {
   .col-lg-1,
   .col-lg-10,
   .col-lg-11,

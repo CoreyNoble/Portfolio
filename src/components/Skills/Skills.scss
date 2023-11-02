@@ -2,19 +2,6 @@
 @use "src/utils/design-tokens/spacing" as space;
 
 .skills {
-  position: relative;
-  z-index: 2;
-
-  &-primary {
-    flex: 1;
-    padding-right: space.$m;
-  }
-
-  &-secondary {
-    flex: 1;
-    padding-left: space.$m;
-  }
-
   &-list {
     display: flex;
     flex-wrap: wrap;

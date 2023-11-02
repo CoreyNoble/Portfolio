@@ -2,14 +2,12 @@
 @use "src/utils/design-tokens/spacing" as space;
 
 .introduction {
-  position: relative;
-  margin-top: -6rem;
-  z-index: 2;
-
   &-primary {
   }
 
   &-secondary {
+    margin-top: -8rem;
+
     img {
       display: block;
       width: 100%;
