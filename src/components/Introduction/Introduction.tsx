@@ -5,8 +5,8 @@ import "./Introduction.scss";
 
 export const Introduction = () => {
   return (
-    <section className="introduction container">
-      <div className="row">
+    <section className="container">
+      <div className="introduction row">
         <div className="introduction-primary col-sm-12 col-lg-6 m-b-xxxl">
           <Section
             firstTitle="What I bring to the&nbsp;table"

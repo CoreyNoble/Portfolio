@@ -2,11 +2,27 @@
 @use "src/utils/design-tokens/spacing" as space;
 
 .introduction {
+  margin-top: 4rem;
+
+  @include isDesktop {
+    margin-top: 3.5rem;
+  }
+
+  @include isLargeDesktop {
+    margin-top: 2.5rem;
+  }
+
+  @media (min-width: 1920px) {
+    margin-top: unset;
+  }
+
   &-primary {
   }
 
   &-secondary {
-    margin-top: -8rem;
+    @include isLargeDesktop {
+      margin-top: -8rem;
+    }
 
     img {
       display: block;
