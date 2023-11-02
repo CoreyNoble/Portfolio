@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './normalize.css';
+import './bootstrap-grid.scss';
 import './index.scss';
 import './utils/classes.scss';
 import App from './App';
