@@ -28,31 +28,31 @@ export const Skills = () => {
         <div className="skills-primary col-sm-12 col-lg-6 m-b-xxxl">
           <Section firstTitle="Primary Technologies" />
           <div className="skills-list">
-            <img src={iconReact} className="rotate-clockwise" alt="" />
-            <img src={iconTypeScript} alt="" />
-            <img src={iconSASS} alt="" />
-            <img src={iconHTML} alt="" />
-            <img src={iconGit} alt="" />
-            <img src={iconJest} alt="" />
-            <img src={iconRTL} alt="" />
-            <img src={iconCypress} alt="" />
-            <img src={iconStorybook} alt="" />
+            <img src={iconReact} className="rotate-clockwise" alt="React JS" />
+            <img src={iconTypeScript} alt="TypeScript" />
+            <img src={iconSASS} alt="SASS" />
+            <img src={iconHTML} alt="HTML" />
+            <img src={iconGit} alt="Git" />
+            <img src={iconJest} alt="Jest" />
+            <img src={iconRTL} alt="React Testing Library" />
+            <img src={iconCypress} alt="Cypress" />
+            <img src={iconStorybook} alt="Storybook" />
           </div>
         </div>
 
         <div className="skills-secondary col-sm-12 col-lg-6 m-b-xxxl">
           <Section firstTitle="Secondary Technologies" />
           <div className="skills-list">
-            <img src={iconDocker} alt="" />
-            <img src={iconNode} alt="" />
-            <img src={iconLighthouse} alt="" />
-            <img src={iconFigma} alt="" />
-            <img src={iconPhotoshop} alt="" />
-            <img src={iconVSCode} alt="" />
-            <img src={iconChrome} className="rotate-counter-clockwise" alt="" />
-            <img src={iconFirefox} alt="" />
-            <img src={iconSafari} alt="" />
-            <img src={iconEdge} alt="" />
+            <img src={iconDocker} alt="Docker" />
+            <img src={iconNode} alt="Node JS" />
+            <img src={iconLighthouse} alt="Google Lighthouse" />
+            <img src={iconFigma} alt="Figma" />
+            <img src={iconPhotoshop} alt="PhotoShop" />
+            <img src={iconVSCode} alt="VS Code" />
+            <img src={iconChrome} className="rotate-counter-clockwise" alt="Google Chrome" />
+            <img src={iconFirefox} alt="Mozilla Firefox" />
+            <img src={iconSafari} alt="Safari" />
+            <img src={iconEdge} alt="Microsoft Edge" />
           </div>
         </div>
       </div>
